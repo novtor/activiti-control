@@ -4,4 +4,4 @@ coverage/
 .sass-cache/
 .idea/
 .tmp/
-dist/
+src/main/resources/static
