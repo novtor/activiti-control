@@ -48,7 +48,7 @@
         "module": null
       },
       "paths": {
-        "src": "src",
+        "src": "front",
         "dist": "dist",
         "e2e": "e2e",
         "tmp": ".tmp"
