@@ -1,0 +1,21 @@
+<div ng-controller="DeploymentsController">
+  <div class="col-sm-12 text-center">Deployments</div>
+  <table datatable="ng" dt-options="dtOptions">
+    <thead>
+    <tr>
+      <th>No.</th>
+      <th>Name</th>
+      <th>Deployment Date</th>
+      <th>Link</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="deployment in deployments">
+      <td>{{$index + 1}}</td>
+      <td>{{deployment.name}}</td>
+      <td>{{deployment.deploymentTime | date:"dd/MM/yyyy HH:mm"}}</td>
+      <td>{{deployment.url}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>

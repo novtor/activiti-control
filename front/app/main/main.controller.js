@@ -1,7 +1,7 @@
 export class MainController {
-  constructor ($timeout, webDevTec, toastr) {
+  constructor ($timeout, webDevTec, toastr, $http) {
     'ngInject';
-
+    $http.defaults.headers.common['Authorization'] = 'Basic YWRtaW46YWRtaW4=';
     this.awesomeThings = [];
     this.classAnimation = '';
     this.creationDate = 1449273562846;
