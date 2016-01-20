@@ -4,6 +4,13 @@ export function routerConfig ($routeProvider) {
     .when('/deployments', {
       templateUrl: 'app/partials/deployments/deployments.html',
       controller: 'DeploymentsController',
+      name: 'deployments',
+      controllerAs: 'root'
+    })
+    .when('/deployments-dyna', {
+      templateUrl: 'app/partials/deployments-dyna/deployments.html',
+      controller: 'DeploymentsDynaController',
+      name: 'deployments-dyna',
       controllerAs: 'root'
     })
     //.when('/managment', {

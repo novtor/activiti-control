@@ -17,6 +17,7 @@ gulp.task('inject-reload', ['inject'], function() {
 
 gulp.task('inject', ['scripts'], function () {
   var injectStyles = gulp.src([
+    path.join(conf.paths.bower_components, '/dynatable/jquery.dynatable.css'),
     path.join(conf.paths.src, '/app/**/*.css')
   ], { read: false });
 
